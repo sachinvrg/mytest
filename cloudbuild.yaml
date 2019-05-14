@@ -4,5 +4,5 @@ steps:
     args: ['install']
 
    #deploy
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/mytest-240512/gcloud'
     args: ['app', 'deploy']
