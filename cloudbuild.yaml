@@ -1,12 +1,12 @@
 steps:
   #install
-  - name: 'grc.io/cloud-builders/npm'
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
 
    #build
-  - name: 'grc.io/cloud-builders/npm'
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
 
    #deploy
-  - name: 'grc.io/mytest-240512/npm'
+  - name: 'gcr.io/mytest-240512/npm'
     args: ['deploy']
