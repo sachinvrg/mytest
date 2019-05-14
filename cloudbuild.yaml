@@ -1,8 +1,7 @@
 steps:
-  #install
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
-
-   #deploy
-  - name: 'gcr.io/mytest-240512/gcloud'
-    args: ['app', 'deploy']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['test']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
